@@ -1,3 +1,4 @@
+import Posts from "./components/Posts";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
           Im <span className="font-bold">Alisher</span>.
         </span>
       </p>
+      <Posts />
     </main>
   );
 }
