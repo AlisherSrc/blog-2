@@ -31,8 +31,8 @@ export default function RootLayout({
         <Navbar />
         <ProfilePic />
         {children}
+        <Analytics />
       </body>
-      <Analytics />
     </html>
   );
 }
