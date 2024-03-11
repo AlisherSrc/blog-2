@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import ProfilePic from "./components/ProfilePic";
-
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +32,7 @@ export default function RootLayout({
         <ProfilePic />
         {children}
       </body>
+      <Analytics />
     </html>
   );
 }
